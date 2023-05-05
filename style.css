@@ -1,13 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400&family=Tinos:ital,wght@0,400;0,700;1,400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 
 body{
- width: 100%;
- background-image: url();
+ max-width: 100%;
+ /* background-image: url(/Apple-Macbook-Pro-M2-Pro-and-M2-Max-hero-230117.jpg.og.jpeg);*/
+ background-color: #efefef;
  background-repeat: none;
  background-size: cover;
+
+}
+.nav {
+
+    justify-content: center;
+    margin-bottom: 60px;
+    border: 1px solid ;
+    border-radius: 5px;
+    border-style: none;
+    width: auto;
+    padding: 10px 25px;
+    background-color: #1876f2;
+    height: 100px;
+}
+
+.nav-bar {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    display: flex;
+    font-weight: 600;
+    color: #fff;
+    font-size: 35px;
+
+}
+.logo span i {
+    font-size: 50px;
+    color: rgba(165, 116, 42, 0.931);
+    
+}
+
+.logo span {
+    color: crimson;
+    font-size: 30px;
+    
+}
+.logo p{
+    margin-top: 10px;
+    cursor: pointer;
+}
+.nav-nav{
+    display: flex;
+}
+.nav-nav i{
+    display: none;
+}
+.nav-link{
+ display: flex;
+ margin-right: 20px;
+ gap: 50px;
+ margin-top: 25px;
+ padding-right: 30px;
+
+}
+
+.bx-menu {
+    font-size: 65px;
+    color: #efefef;
+    text-align: center;
+    
+    
+    
+}
+.nav-link li {
+    list-style: none;
+    
+}
+.nav-link li a{
+
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+.nav-link li a:hover{
+    color: crimson;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 820px) {
+     .logo span i{
+      font-size: 35px;
+      margin-top: 10px;
+    
+    }
+    .logo p{
+        font-size: 25px;
+        margin-top: 5px;
+        padding-top: 8px;
+    }
+    .nav-link{
+      display: none;
+
+    }
+ .nav-nav i{
+    display: inline-block;
+ }
 }
